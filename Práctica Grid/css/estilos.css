@@ -1,0 +1,137 @@
+/* Juan Manuel Mendizábal Amat */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  background-image: linear-gradient(to bottom, white, rgb(245, 245, 119));
+  font-size: 1.3vw;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  justify-content: center;
+  grid-template-areas: 
+  "header header header"
+  "primFila primFila primFila"
+  "segFila segFila segFila"
+  "footer footer footer"
+  ;
+}
+
+
+
+header {
+  text-align: center;
+  margin-bottom: 2%;
+  grid-area: header;
+}
+
+h2 {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#primeraFila {
+  display: grid;
+  grid-template-areas: 
+  "column fig1 fig2"
+  ;
+  justify-content: space-around;
+  grid-area: primFila;
+  
+}
+
+#segundaFila {
+  display: grid;
+  grid-template-areas:
+  "fig3 fig4 fig5"
+  ;
+  justify-content: space-around;
+
+  grid-area: segFila;
+  
+}
+
+nav {
+  grid-area: column;
+}
+nav ul li {
+  list-style: none;
+  margin: 20%;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+img {
+  width: 25vw;
+  border-radius: 10px;
+}
+
+section {
+  margin: 2%;
+  padding: 1%;
+  width: 100%;
+}
+
+figure {
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+  
+}
+
+
+footer {
+  display: grid;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 3%;
+  grid-area: footer;
+  grid-template-areas: 
+  "address div1 div2"
+  ;
+}
+
+#div1 {
+  grid-area: div1;
+}
+
+#div2 {
+  grid-area: div2;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+#imagen1 {
+  grid-area: fig1;
+}
+#imagen2 {
+  grid-area: fig2;
+}
+#imagen3 {
+  grid-area: fig3;
+}
+#imagen4 {
+  grid-area: fig4;
+}
+#imagen5 {
+  grid-area: fig5;
+}
+
+.fa-brands {
+  font-size: 2.5vw;
+  color:blueviolet;
+}
